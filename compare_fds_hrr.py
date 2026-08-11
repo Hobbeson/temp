@@ -240,7 +240,8 @@ def publication_figure(
         axis.set_ylabel(ylabel)
         axis.set_title(title, loc="left", fontweight="bold")
         axis.grid(True, alpha=0.25, lw=0.5)
-        axis.spines[["top", "right"]].set_visible(False)
+        axis.spines["top"].set_visible(False)
+        axis.spines["right"].set_visible(False)
     for axis in axes:
         axis.set_xlabel("Time (s)")
     axes[0].legend(frameon=False, loc="best")
