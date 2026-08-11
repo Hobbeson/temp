@@ -25,10 +25,12 @@ Requirements: Python 3.9+, numpy, pandas, matplotlib.
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 from typing import Iterable
 
+os.environ["MPLBACKEND"] = "Agg"
 import matplotlib as mpl
 mpl.use("Agg")
 import matplotlib.pyplot as plt
